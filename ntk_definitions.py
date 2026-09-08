@@ -10,15 +10,6 @@ import functools
 import neural_tangents as nt
 from neural_tangents import stax
 
-from IPython.display import set_matplotlib_formats
-import matplotlib_inline
-
-matplotlib_inline.backend_inline.set_matplotlib_formats('pdf', 'svg')
-import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import matplotlib.lines as mlines
-
 import itertools
 
 # Network parameters
