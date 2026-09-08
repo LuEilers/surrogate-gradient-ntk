@@ -1,0 +1,10 @@
+# Compatible dependency set for Neural Tangents & Surrogate-NTK code
+jax==0.4.26
+jaxlib==0.4.26
+neural-tangents
+tf2jax<=0.3.5
+ipython
+matplotlib
+matplotlib-inline
+numpy
+scipy
