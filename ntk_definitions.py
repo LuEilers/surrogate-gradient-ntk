@@ -66,7 +66,7 @@ def generate_dataset_trainfromtest(target_fn, n_train, n_test, noise_scale, key)
     return train_indices, test_xs, test_xs_1d, np.reshape(test_ys, (-1,1)), train_xs, train_xs_1d, np.reshape(train_ys, (-1,1))
 
 
-#def calc_plot_data(axes, ax_errors, subplot_matrix_row, col_index, n, m):
+# Generate data for plotting empirical NTKs and training/test losses
 def calc_plot_data(test, train, circle_middle_x, list_training_steps, n, m, key, net_key):
     # Define network
     shape = (dim, n, n, 1)
@@ -109,8 +109,9 @@ def calc_plot_data(test, train, circle_middle_x, list_training_steps, n, m, key,
             test_losses += [np.reshape(loss(get_params(opt_state), *test), (1,))]
             if i in list_training_steps:
                 emp_ntk_draw_list.append(emp_ntk_fn(np.array([circle_middle_x]), test[0], get_params(opt_state))[0,:])
-            
-            opt_state = opt_update(i, grad_loss(opt_state, *train), opt_state)
+
+            if i < training_steps:
+                opt_state = opt_update(i, grad_loss(opt_state, *train), opt_state)
 
         if training_steps > 0:
             train_losses = np.concatenate(train_losses)
