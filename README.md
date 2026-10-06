@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 ## Figure 1
-Data for Figure 1 is generated with simulation_figure1.py. With this data, plot_figure1.ipynb is used to plot Figure 1 and Figure B.3.
+Data for Figure 1 is generated with [simulation_figure1.py](simulation_figure1.py). With this data, plot_figure1.ipynb is used to plot Figure 1 and Figure B.3.
 
 ## Figure 2
 Data for Figure 2 is generated with simulation_figure2.py. The simulation requires sufficiently large RAM. With this data, plot_figure2.ipynb is used to plot the data for Figure 2 and Figure B.4.
