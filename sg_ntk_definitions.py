@@ -296,7 +296,7 @@ def det_kernel(x,y,z,m1,m2,surr):
     if surr == 'erf':
         if m1 == -1:
             if m2 == -1:
-                if np.abs(x*y - z**2) < 1e-100:
+                if np.abs(x*y - z**2) < 1e-30:
                     return np.nan
                 else:
                     return 2 * sigma_w**2 / np.pi * (x*y - z**2)**(-1/2)
