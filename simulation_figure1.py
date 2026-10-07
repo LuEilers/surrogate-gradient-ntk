@@ -25,9 +25,7 @@ def main():
 
     # Init key
     key, net_key = random.split(random.PRNGKey(10))
-
-    var_array = [(test, train, circle_middle_x, list_training_steps, n, m, key, net_key) for m in list_scaling_m for n in list_width_n]
-
+    
     # Calculate analytic NTKs
     kernel_ana_list = []
     for m in list_scaling_m:
