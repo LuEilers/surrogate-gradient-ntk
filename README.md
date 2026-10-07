@@ -1,4 +1,5 @@
 # A generalized neural tangent kernel for surrogate gradient learning
+The code builds on the [Neural Tangents API](https://pypi.org/project/neural-tangents/), and the [Neural Tangents Cookbook](https://colab.research.google.com/github/google/neural-tangents/blob/main/notebooks/neural_tangents_cookbook.ipynb) was used as a reference.
 
 ## Requirements
 The required dependencies can be installed as follows:
@@ -19,7 +20,7 @@ Data for Figure 3 is generated with [simulation_figure3.py](simulation_figure3.p
 
 ## Base code
 [ntk_definitions.py](ntk_definitions.py) contains the code for the simulation of empirical and analytic NTK.
-[sg_ntk_definitions.py](sg_ntk_definitions.py) contains the modifications to the Neural Tangents package, the simulation of empiricaland analytic SG-NTK, and code for SGL.
+[sg_ntk_definitions.py](sg_ntk_definitions.py) contains the modifications to the Neural Tangents package, the simulation of empirical and analytic SG-NTK, and code for SGL.
 
 ## Links
 [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/10f1737aa6347ccc555ac068e1b45523-Abstract-Conference.html)
